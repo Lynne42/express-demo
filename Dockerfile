@@ -1,7 +1,7 @@
 FROM node:17.6-alpine3.14 AS bundler
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm install --registry=http://registry.npm.taobao.org
+RUN npm install
 COPY . .
 RUN npm run build
 
