@@ -12,5 +12,5 @@ COPY --from=bundler /app/node_modules ./
 COPY package.json package-lock.json ./
 
 
-EXPOSE 8081
+EXPOSE 3001
 CMD npm run start
